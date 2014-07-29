@@ -1,5 +1,3 @@
-# 1 Introduction
-
 This wiki describes the SData protocol.
 
 The introduction contains a subsection on
