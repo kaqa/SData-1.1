@@ -1,7 +1,7 @@
 This wiki describes the SData protocol.
 
 The introduction contains a subsection on
-[terminology](/daisy/sdata/Introduction/186-DSY.html "1.1 Terminology") and another one on
+[terminology](1.1 Terminology) and another one on
 [general principles](/daisy/sdata/Introduction/663-DSY.html "1.2 General Principles") that underpin the design of
 SData.
 
