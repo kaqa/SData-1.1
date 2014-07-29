@@ -2,14 +2,14 @@ This wiki describes the SData protocol.
 
 The introduction contains a subsection on
 [terminology](1.1 Terminology) and another one on
-[general principles](/daisy/sdata/Introduction/663-DSY.html "1.2 General Principles") that underpin the design of
+[general principles](1.2 General Principles) that underpin the design of
 SData.
 
 The first four sections give general information about the SData protocol and
 answers the following questions:
 
-*   What is the [URL syntax](/daisy/sdata/AnatomyOfAnSDataURL.html "2  Anatomy of an SData URL")?
-*   What is the [payload](/daisy/sdata/AnatomyOfAnSDataFeed.html "3 Anatomy of an SData Feed") for SData requests and
+*   What is the [URL syntax](2  Anatomy of an SData URL)?
+*   What is the [payload](3 Anatomy of an SData Feed) for SData requests and
 response?
 *   What is the [metadata](/daisy/sdata/Metadata.html "4  Metadata") format (how does an SData
 provider expose the structure of the resources to its consumer)?
