@@ -1,10 +1,10 @@
-*   [1  Introduction](1  Introduction)
+*   [1 Introduction](1 Introduction)
 
-*   [2  Anatomy of an SData URL](2  Anatomy of an SData URL)
+*   [2 Anatomy of an SData URL](2 Anatomy of an SData URL)
 
-*   [3  Anatomy of an SData Feed](3  Anatomy of an SData Feed)
+*   [3 Anatomy of an SData Feed](3 Anatomy of an SData Feed)
 
-*   [4  Metadata](4  Metadata)
+*   [4 Metadata](4 Metadata)
 
 *   [5 Security](5 Security)
 
