@@ -1,39 +1,35 @@
-This wiki describes the SData protocol.
+*   [1 Introduction](1 Introduction)
 
-The introduction contains a subsection on
-[terminology](1.1 Terminology) and another one on
-[general principles](1.2 General Principles) that underpin the design of
-SData.
+*   [2  Anatomy of an SData URL](2  Anatomy of an SData URL)
 
-The first four sections give general information about the SData protocol and
-answers the following questions:
+*   [3 Anatomy of an SData Feed](3 Anatomy of an SData Feed)
 
-*   What is the [URL syntax](2  Anatomy of an SData URL)?
-*   What is the [payload](3 Anatomy of an SData Feed) for SData requests and
-response?
-*   What is the [metadata](/daisy/sdata/Metadata.html "4  Metadata") format (how does an SData
-provider expose the structure of the resources to its consumer)?
-*   How is [security](/daisy/sdata/Security.html "5 Security") handled?
+*   [4 Metadata](4 Metadata)
 
-The following sections are centered around the operations exposed by an SData
-service. They describe how the request should be formed (URL, HTTP headers,
-payload) and what the service should respond (HTTP status code, HTTP headers,
-payload). These sections cover functional issues such as error handling,
-concurrency handling, paging, caching in the contexts where they are relevant.
+*   [5 Security](5 Security)
 
-The following operations are covered:
+*   [6 Queries](6 Queries)
 
-*   [Query](/daisy/sdata/Queries.html "6  Queries") (returns a collection of resources).
-*   [Read](/daisy/sdata/ReadOperation.html "7 Read Operation") (returns a single resource).
-*   [Create. ](/daisy/sdata/CreateOperation.html "8 Create Operation")
+*   [7 Read Operation](7 Read Operation)
 
-*   [Update](/daisy/sdata/UpdateOperation.html "9 Update Operation").
-*   [Delete](/daisy/sdata/DeleteOperation.html "10 Delete Operation").
-*   [Service operation](/daisy/sdata/ServiceOperations.html "11 Service Operations") (request/response that does not
-fit into the CRUD model) and [named queries](/daisy/sdata/596-DSY.html "12 Named Queries").
-*   [Batch operation](/daisy/sdata/165-DSY.html "13 Batch Operations").
+*   [8 Create Operation](8 Create Operation)
 
-The last section describes the [SData registry](/daisy/sdata/423-DSY.html "14 SData Registry")
-that applications can use to discover and register service endpoints.
+*   [9 Update Operation](9 Update Operation)
 
-* * *
+*   [10 Delete Operation](10 Delete Operation)
+
+*   [11 Service Operations](11 Service Operations)
+
+*   [12 Named Queries](12 Named Queries)
+
+*   [13 Batch Operations](13 Batch Operations)
+
+*   [14 SData Registry](14 SData Registry)
+
+*   [Appendices](Appendices)
+
+*   [Compliance Summary](Compliance Summary)
+
+*   [Versions Summary](Versions Summary)
+
+*   [History of Changes](History of Changes)
