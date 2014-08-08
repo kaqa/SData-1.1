@@ -1,0 +1,430 @@
+<div id="contentOneCol">
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/daisy/sdata/Introduction"><img border="0" src="/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/daisy/sdata/Introduction/663-DSY"><img border="0" src="/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<h1 xmlns:cinclude="http://apache.org/cocoon/include/1.0" xmlns:p="http://outerx.org/daisy/1.0#publisher" xmlns:einclude="http://outerx.org/daisy/1.0#externalinclude" xmlns:lt="http://outerx.org/daisy/1.0#linktransformer" id="dsy186-DSY" class="daisy-document-name">1.1 Terminology</h1>
+
+
+<p xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">The terminology used by SData is summarized in the following table:</p>
+
+
+<table class="content" print-width="100%" width="100%">
+<tbody>
+
+<tr>
+
+<th>
+
+<p align="left">Term</p>
+
+</th>
+<th>
+
+<p align="left">Examples</p>
+
+</th>
+<th>
+
+<p align="left">Default<br>
+Representation</p>
+
+</th>
+<th>
+
+<p align="left">Description</p>
+
+</th>
+<th>
+
+<p align="left">Synonyms</p>
+
+</th>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource</p>
+
+</td>
+<td valign="top">
+
+<p>Account 1753<br>
+Sales order 08062100004</p>
+
+</td>
+<td valign="top">
+
+<p>Atom entry</p>
+
+</td>
+<td valign="top">
+
+<p>A resource is a single composite piece of data&nbsp;that is addressable by a URL
+in an SData service.</p>
+
+</td>
+<td valign="top">
+
+<p>Record<br>
+object<br>
+instance</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource kind</p>
+
+</td>
+<td valign="top">
+
+<p>Accounts<br>
+sales orders</p>
+
+</td>
+<td valign="top">
+
+<p>N/A</p>
+
+</td>
+<td valign="top">
+
+<p>A classification of resources&nbsp;that share common features and behaviours.</p>
+
+</td>
+<td valign="top">
+
+<p>Class<br>
+entity</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource collection</p>
+
+</td>
+<td valign="top">
+
+<p>All&nbsp;accounts<br>
+Sales orders of customer 347</p>
+
+</td>
+<td valign="top">
+
+<p>Atom feed</p>
+
+</td>
+<td valign="top">
+
+<p>A&nbsp;collection of resources.</p>
+
+</td>
+<td valign="top">
+
+<p>Table<br>
+list</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource definition</p>
+
+</td>
+<td valign="top">
+
+<p>Definition of accounts</p>
+
+</td>
+<td valign="top">
+
+<p>XSD &lt;element&gt; and &lt;complexType&gt;</p>
+
+</td>
+<td valign="top">
+
+<p>Describes the structure of the resources.</p>
+
+</td>
+<td valign="top">
+
+<p>Table definition<br>
+Class definition</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource template</p>
+
+</td>
+<td valign="top">
+
+<p>Account template</p>
+
+</td>
+<td valign="top">
+
+<p>Atom entry</p>
+
+</td>
+<td valign="top">
+
+<p>Is a pseudo-resource with&nbsp;all&nbsp;its properties set to their default values.
+<br>
+It can&nbsp;be used to set the initial content of a resource creation form.</p>
+
+</td>
+<td valign="top"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Contract</p>
+
+</td>
+<td valign="top">
+
+<p>CRM/ERP contract</p>
+
+</td>
+<td valign="top">
+
+<p>N/A</p>
+
+</td>
+<td valign="top">
+
+<p>Defines the structure and behaviour of a set of related resource kinds
+exposed by an SData service.</p>
+
+</td>
+<td valign="top">
+
+<p>Service interface</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Schema</p>
+
+</td>
+<td>
+
+<p>Schema for CRM/ERP contract</p>
+
+</td>
+<td valign="top">
+
+<p>XSD &lt;schema&gt;</p>
+
+</td>
+<td valign="top">
+
+<p>Groups together the resource definitions of a given contract.</p>
+
+</td>
+<td valign="top"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Property</p>
+
+</td>
+<td valign="top">
+
+<p>Account name<br>
+Sales order amount</p>
+
+</td>
+<td valign="top">
+
+<p>N/A</p>
+
+</td>
+<td valign="top">
+
+<p>An abstraction of a data element that is common to all the resources of a
+given kind.</p>
+
+</td>
+<td valign="top">
+
+<p>Field<br>
+column<br>
+attribute</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Property definition</p>
+
+</td>
+<td valign="top">
+
+<p>Definition of account name</p>
+
+</td>
+<td valign="top">
+
+<p>XSD &lt;element&gt; inside a &lt;complexType&gt;</p>
+
+</td>
+<td valign="top">
+
+<p>Describes the type and attributes of a given property of a resource kind.</p>
+
+</td>
+<td valign="top">
+
+<p>Field definition<br>
+column definition</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Property value</p>
+
+</td>
+<td valign="top">
+
+<p>Name of account 1753<br>
+Amount of sales order 08062100004</p>
+
+</td>
+<td valign="top">
+
+<p>XML element inside Atom entry</p>
+
+</td>
+<td valign="top">
+
+<p>An individual data element in a resource.<br>
+The term "property value" is oftened shortened as "property" as the context
+makes it obvious that the "value" is referred to.</p>
+
+</td>
+<td valign="top">
+
+<p>Field value<br>
+column value<br>
+attribute value</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Service operation</p>
+
+</td>
+<td valign="top">
+
+<p>Compute price</p>
+
+</td>
+<td valign="top">
+
+<p>URL for the operation<br>
+Atom entries for input parameters and result</p>
+
+</td>
+<td valign="top">
+
+<p>A&nbsp;SOAP-like operation that does not fit the CRUD model imposed by REST.</p>
+
+</td>
+<td valign="top">
+
+<p>Function<br>
+procedure<br>
+RPC</p>
+
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<hr>
+<div style="float: left;">
+<a href="http://sdata.showcase2.sage.com/interopforum">visit internal forum</a>
+</div>
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/daisy/sdata/Introduction"><img border="0" src="/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/daisy/sdata/Introduction/663-DSY"><img border="0" src="/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<div id="commentContainer">
+<div class="corner">
+<span><a onclick="document.getElementById('comments').style.display=''; document.getElementById('showCommentsLink').style.display='none'; return false;" onmouseover="window.status=''; return true;" href="#" id="showCommentsLink"> Comments
+            (0)
+          </a></span><a name="daisycomments"></a>
+<div id="comments" class="comments" style="display: none">
+<span class="commentsTitle">Comments</span> <a onclick="document.getElementById('comments').style.display='none'; document.getElementById('showCommentsLink').style.display=''; return false;" onmouseover="window.status=''; return true;" href="#">Hide</a>
+<br>There are no comments.<div class="addCommentTitle">Add a comment</div>
+<div class="addComment">
+<a name="daisycommenteditor"></a>
+<form method="POST" action="/daisy/sdata/Introduction/186-DSY.html">
+<input value="addComment" name="action" type="hidden"><textarea cols="80" rows="5" style="width: 40em;" name="commentText"></textarea>
+<br>Comment visible to: <select name="commentVisibility"><option value="public">everyone</option><option value="private">only me</option></select>
+<br>
+<input value="Add comment" type="submit">
+</form>
+</div>
+</div>
+</div>
+</div>
+<br style="clear:both">
+</div>
