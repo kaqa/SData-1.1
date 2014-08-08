@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:daisyutil="xalan://org.outerj.daisy.frontend.util.XslUtil" xmlns:urlencoder="xalan://java.net.URLEncoder" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:n="http://outerx.org/daisy/1.0#navigation" xmlns:d="http://outerx.org/daisy/1.0">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2.1  Resource Collection URL</title>
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/daisy.css" type="text/css" rel="stylesheet">
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/basic.css" type="text/css" rel="stylesheet">
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/print.css" media="print" type="text/css" rel="stylesheet">
+<script>
+          var daisy;
+          if (!daisy) daisy = new Object();
+          daisy.mountPoint = "/daisy";
+          daisy.skin = "sageBranding2009";
+          
+            daisy.site = {};
+            daisy.site.name = "sdata";
+            daisy.site.branch = "sdata-1_1";
+            daisy.site.branchId = "16";
+            daisy.site.language = "default";
+            daisy.site.languageId = "1";
+          
+          daisy.user = {};
+          daisy.user.id = "101";
+          daisy.user.login = "guest";
+        </script><script src="/SData-1.1/daisy/resources/js/daisy.js" type="text/javascript"></script><script src="/SData-1.1/daisy/resources/skins/sageBranding2009/js/menu.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="headerContainer">
+<div id="header">
+<div id="headerUnderlay">
+<div id="headerContent">
+<ul class="tabNavigation">
+<li>
+<a class="menuLink" onmouseover="status=''; return true;" href="#">User: guest</a>
+<ul>
+<li class="tabNavigation">
+<a href="/SData-1.1/daisy/login?returnTo=%2Fdaisy%2Fdaisyhome">Change login</a>
+</li>
+<li class="tabNavigation">
+<a href="https://signin.sage.com/MBSignIn/SignUp.asp?OperationID=441911&MBSignUp/AccountActivationRedirectURL=http://interop.sage.com">Register</a>
+</li>
+<li class="tabNavigation">
+<a href="/SData-1.1/daisy/locale?returnTo=%2Fdaisy%2Fsdata%2FAnatomyOfAnSDataURL%2FResourceCollectionURL">Change locale</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+<div id="sageLogo">
+<h1>
+<img style="margin-right: 15px;" align="absmiddle" alt="Sage Data" src="/SData-1.1/daisy/resources/local/img/sageLogo170.gif">SData Core Specification - version 1.1</h1>
+</div>
+<div id="bodyContainer">
+<div id="leftMenu">
+<div id="sidemenu">
+<ul class="navigation">
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Introduction.html" class="navigation  navnode-closed">1  Introduction</a>
+</li>
+<li class="navigation  navnode-open">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL.html" class="navigation  navnode-open">2  Anatomy of an SData URL</a>
+<ul>
+<li class="navigation active-navnode">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/ResourceCollectionURL.html" class="navigation active-navnode">2.1  Resource Collection URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/SingleResourceURL.html" class="navigation ">2.2  Single Resource URL </a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/187-DSY.html" class="navigation ">2.3 Resource Property URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/ServiceOperationURL.html" class="navigation ">2.4  Service Operation URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/597-DSY.html" class="navigation ">2.5 Named Query URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/TemplateResourceURL.html" class="navigation ">2.6  Template Resource URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/ResourceSchemaURL.html" class="navigation ">2.7  Resource Schema URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/SystemURL.html" class="navigation "> 2.8  System URL</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/211-DSY.html" class="navigation ">2.9 Intermediate URLs</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/604-DSY.html" class="navigation ">2.10 Miscellaneous URLs</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/QueryParameters.html" class="navigation ">2.11  Query Parameters</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/QueryLanguage.html" class="navigation ">2.12 Query Language</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/NamingConventionsForURLs.html" class="navigation ">2.13 Naming Conventions for URLs</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/204-DSY.html" class="navigation ">2.14 Resource Versioning</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/589-DSY.html" class="navigation ">2.15 Extensibility</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/600-DSY.html" class="navigation ">2.16 Internationalized URLs</a>
+</li>
+</ul>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataFeed.html" class="navigation  navnode-closed">3  Anatomy of an SData Feed</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Metadata.html" class="navigation  navnode-closed">4  Metadata</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Security.html" class="navigation  navnode-closed">5 Security</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Queries.html" class="navigation  navnode-closed">6 Queries</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/ReadOperation.html" class="navigation  navnode-closed">7 Read Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/CreateOperation.html" class="navigation  navnode-closed">8 Create Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/UpdateOperation.html" class="navigation  navnode-closed">9 Update Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/DeleteOperation.html" class="navigation  navnode-closed">10 Delete Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/ServiceOperations.html" class="navigation  navnode-closed">11 Service Operations</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/596-DSY.html" class="navigation  navnode-closed">12 Named Queries</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/165-DSY.html" class="navigation  navnode-closed">13 Batch Operations</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/423-DSY.html" class="navigation  navnode-closed">14 SData Registry</a>
+</li>
+<li class="navigation navgroup-clickable navnode-closed">
+<a class="navigation navgroup-clickable navnode-closed" href="/SData-1.1/daisy/sdata/g1">Appendices</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/662-DSY.html" class="navigation ">Compliance Summary</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/601-DSY.html" class="navigation ">Versions Summary</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/HistoryOfChanges.html" class="navigation ">History of Changes</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="breadcrumb">
+<span class="breadItem"><a href="http://sdata.sage.com/">SData Home</a></span>
+				 / <span class="breadItem"><a href="/SData-1.1/daisy/sdata/">SData Core Specification - version 1.1</a></span>
+				/ <span class="breadItemSelected">2.1  Resource Collection URL</span>
+</div>
+<div id="contentBorderTop"></div>
+<div id="contentBorder">
+<div id="content">
+<div id="contentOneCol">
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/SingleResourceURL"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<h1 xmlns:cinclude="http://apache.org/cocoon/include/1.0" xmlns:p="http://outerx.org/SData-1.1/daisy/1.0#publisher" xmlns:einclude="http://outerx.org/daisy/1.0#externalinclude" xmlns:lt="http://outerx.org/daisy/1.0#linktransformer" id="dsy3-DSY" class="daisy-document-name">2.1  Resource Collection URL</h1>
+
+
+<p xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">Let's start with a typical SData URL for a resource collection:</p>
+
+
+<pre>
+<a href="http://sdata.acme.com/sdata/myApp/myContract/prod/accounts?startIndex=21&count=10">http://www.example.com/sdata/myApp/myContract/prod/accounts?startIndex=21&amp;count=10</a> 
+</pre>
+
+
+<p>This URL has the following components:</p>
+
+
+<table class="content">
+<tbody>
+
+<tr>
+
+<th valign="top">
+
+<p align="left">
+<strong>Example</strong>
+</p>
+
+</th>
+<th valign="top">
+
+<p align="left">
+<strong>Component Name</strong>
+</p>
+
+</th>
+<th valign="top">
+
+<p align="left">
+<strong>Description / Comments</strong>
+</p>
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>http</p>
+
+</td>
+<td>
+
+<p>Protocol</p>
+
+</td>
+<td>
+
+<p>
+<tt>https </tt>is also allowed.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>
+<a href="http://www.example.com">www.example.com</a>
+</p>
+
+</td>
+<td valign="top">
+
+<p>Server name</p>
+
+</td>
+<td>
+
+<p>IP address is also allowed (<tt>192.168.1.1</tt>).</p>
+
+
+<p>Can be followed by port number. For example
+<tt><a href="http://www.example.com:5493/">www.example<tt>.c</tt></a></tt><a href="http://www.example.com:5493"><tt>om:5493</tt>.</a>
+
+</p>
+
+
+<p>5493 is the recommended port number for SData services that are not exposed
+on the Internet.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>sdata</p>
+
+</td>
+<td>
+
+<p>Virtual Directory</p>
+
+</td>
+<td>
+
+<p>Should be <tt>sdata</tt>, unless the technical framework imposes something
+different.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>myApp</p>
+
+</td>
+<td>
+
+<p>Application</p>
+
+</td>
+<td>
+
+<p>Name of the application.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>myContract</p>
+
+</td>
+<td valign="top">
+
+<p>Contract name</p>
+
+</td>
+<td>
+
+<p>An SData service can support several &ldquo;integration contracts&rdquo; side-by-side.
+For example, a typical Sage ERP service will support a <tt>crmErp</tt> contract
+which exposes the resources required by CRM integration (with schemas imposed by
+the CRM/ERP contract) and a <tt>native</tt> or <tt>default</tt> contract which
+exposes all the resources of the ERP in their native format.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>prod</p>
+
+</td>
+<td valign="top">
+
+<p>Dataset</p>
+
+</td>
+<td>
+
+<p>Identifies the dataset when the application gives access to several datasets,
+such as several companies and&nbsp;production/test datasets.</p>
+
+
+<p>If the application can only handle a single dataset, or if it can be
+configured with a default dataset, a hyphen can be used as a placeholder for the
+default dataset. For example, if prod is the default dataset in the example
+above, the URL could be shortened as:</p>
+
+
+<p>
+
+<tt><a href="http://www.example.com/sdata/myApp/myContract/-/accounts?startIndex=21&count=10">http://www.example.com/sdata/myApp/myContract/-/accounts?startIndex=21&amp;count=10</a></tt>
+
+</p>
+
+
+<p>If several parameters are required to specify the dataset (for example
+database name and company id), they should be formatted as a single&nbsp;segment in
+the URL. For example, <tt>myApp/myContract/demodb;acme/accounts</tt> -- the
+semicolon separator is application specific, not imposed by SData.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>accounts</p>
+
+</td>
+<td valign="top">
+
+<p>Resource Kind</p>
+
+</td>
+<td>
+
+<p>This URL segment identifies the kind of resource that is&nbsp;queried
+(<tt>account</tt>, <tt>contact</tt>, <tt>salesOrder</tt>, etc.)</p>
+
+
+<p>This URL returns the collection of all account resources, as an Atom feed.
+</p>
+
+
+<p>If the contract exposes a large number of <a title="1.1 Terminology" href="/SData-1.1/daisy/sdata/Introduction/186-DSY.html">resources
+kinds</a>, a functional group can be inserted before the resource kind
+segment&nbsp;(eventually a hierarchy of functional groups), which&nbsp;act as a folder (a
+hierarchy of folders) to organize the resources.</p>
+
+
+<p>Typical functional groups would be <tt>financials</tt>,
+<tt>commercials</tt>, <tt>HR</tt>, etc.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>startIndex=21<br>
+count=10</p>
+
+</td>
+<td valign="top">
+
+<p>Query parameters</p>
+
+</td>
+<td>
+
+<p>The <tt>startIndex</tt> and <tt>count</tt> parameters allow the service
+consumer to request a specific page in a collection. See
+<a title="6.4 Query Paging" href="/SData-1.1/daisy/sdata/Queries/Paging.html">paging section</a> and <a title="2.11  Query Parameters" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/QueryParameters.html">query
+parameters section</a> for details.</p>
+
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<p class="comp">SData URLs MUST comply with this structure. The components
+listed in the table above MUST be present, unless the URL is an intermediate URL
+(see <a title="2.9 Intermediate URLs" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/211-DSY.html">Intermediate URLs</a> section) and they MUST be in
+the right order. There is nevertheless a tolerance on the <tt>/sdata</tt>
+virtual directory component. Applications MAY use a different virtual directory
+name or MAY have more than one segment before the application name if their
+deployment infrastructure requires it. Such applications SHOULD NOT expose a
+$system URL (see <a title="2.8  System and Registry URL" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/SystemURL.html">System and Registry URL</a> section) as
+the <tt>$system</tt> component MUST be in the <tt>/sdata</tt> virtual directory.
+</p>
+
+
+<hr>
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL/SingleResourceURL"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<br style="clear:both">
+</div>
+</div>
+</div>
+<div id="footer">
+<ul id="footerMenu">
+<li>Copyright Sage Technologies Limited 2009</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

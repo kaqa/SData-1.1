@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:daisyutil="xalan://org.outerj.daisy.frontend.util.XslUtil" xmlns:urlencoder="xalan://java.net.URLEncoder" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:n="http://outerx.org/daisy/1.0#navigation" xmlns:d="http://outerx.org/daisy/1.0">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1.1 Terminology</title>
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/daisy.css" type="text/css" rel="stylesheet">
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/basic.css" type="text/css" rel="stylesheet">
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/print.css" media="print" type="text/css" rel="stylesheet">
+<script>
+          var daisy;
+          if (!daisy) daisy = new Object();
+          daisy.mountPoint = "/daisy";
+          daisy.skin = "sageBranding2009";
+          
+            daisy.site = {};
+            daisy.site.name = "sdata";
+            daisy.site.branch = "sdata-1_1";
+            daisy.site.branchId = "16";
+            daisy.site.language = "default";
+            daisy.site.languageId = "1";
+          
+          daisy.user = {};
+          daisy.user.id = "101";
+          daisy.user.login = "guest";
+        </script><script src="/SData-1.1/daisy/resources/js/daisy.js" type="text/javascript"></script><script src="/SData-1.1/daisy/resources/skins/sageBranding2009/js/menu.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="headerContainer">
+<div id="header">
+<div id="headerUnderlay">
+<div id="headerContent">
+<ul class="tabNavigation">
+<li>
+<a class="menuLink" onmouseover="status=''; return true;" href="#">User: guest</a>
+<ul>
+<li class="tabNavigation">
+<a href="/SData-1.1/daisy/login?returnTo=%2Fdaisy%2Fdaisyhome">Change login</a>
+</li>
+<li class="tabNavigation">
+<a href="https://signin.sage.com/MBSignIn/SignUp.asp?OperationID=441911&MBSignUp/AccountActivationRedirectURL=http://interop.sage.com">Register</a>
+</li>
+<li class="tabNavigation">
+<a href="/SData-1.1/daisy/locale?returnTo=%2Fdaisy%2Fsdata%2FIntroduction%2F186-DSY.html">Change locale</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+<div id="sageLogo">
+<h1>
+<img style="margin-right: 15px;" align="absmiddle" alt="Sage Data" src="/SData-1.1/daisy/resources/local/img/sageLogo170.gif">SData Core Specification - version 1.1</h1>
+</div>
+<div id="bodyContainer">
+<div id="leftMenu">
+<div id="sidemenu">
+<ul class="navigation">
+<li class="navigation  navnode-open">
+<a href="/SData-1.1/daisy/sdata/Introduction.html" class="navigation  navnode-open">1  Introduction</a>
+<ul>
+<li class="navigation active-navnode">
+<a href="/SData-1.1/daisy/sdata/Introduction/186-DSY.html" class="navigation active-navnode">1.1 Terminology</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/Introduction/663-DSY.html" class="navigation ">1.2 General Principles</a>
+</li>
+</ul>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL.html" class="navigation  navnode-closed">2  Anatomy of an SData URL</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataFeed.html" class="navigation  navnode-closed">3  Anatomy of an SData Feed</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Metadata.html" class="navigation  navnode-closed">4  Metadata</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Security.html" class="navigation  navnode-closed">5 Security</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Queries.html" class="navigation  navnode-closed">6 Queries</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/ReadOperation.html" class="navigation  navnode-closed">7 Read Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/CreateOperation.html" class="navigation  navnode-closed">8 Create Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/UpdateOperation.html" class="navigation  navnode-closed">9 Update Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/DeleteOperation.html" class="navigation  navnode-closed">10 Delete Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/ServiceOperations.html" class="navigation  navnode-closed">11 Service Operations</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/596-DSY.html" class="navigation  navnode-closed">12 Named Queries</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/165-DSY.html" class="navigation  navnode-closed">13 Batch Operations</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/423-DSY.html" class="navigation  navnode-closed">14 SData Registry</a>
+</li>
+<li class="navigation navgroup-clickable navnode-closed">
+<a class="navigation navgroup-clickable navnode-closed" href="/SData-1.1/daisy/sdata/g1">Appendices</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/662-DSY.html" class="navigation ">Compliance Summary</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/601-DSY.html" class="navigation ">Versions Summary</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/HistoryOfChanges.html" class="navigation ">History of Changes</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="breadcrumb">
+<span class="breadItem"><a href="http://sdata.sage.com/">SData Home</a></span>
+				 / <span class="breadItem"><a href="/SData-1.1/daisy/sdata/">SData Core Specification - version 1.1</a></span>
+				/ <span class="breadItemSelected">1.1 Terminology</span>
+</div>
+<div id="contentBorderTop"></div>
+<div id="contentBorder">
+<div id="content">
+<div id="contentOneCol">
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/Introduction"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/Introduction/663-DSY"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<h1 xmlns:cinclude="http://apache.org/cocoon/include/1.0" xmlns:p="http://outerx.org/daisy/1.0#publisher" xmlns:einclude="http://outerx.org/daisy/1.0#externalinclude" xmlns:lt="http://outerx.org/daisy/1.0#linktransformer" id="dsy186-DSY" class="daisy-document-name">1.1 Terminology</h1>
+
+
+<p xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">The terminology used by SData is summarized in the following table:</p>
+
+
+<table class="content" print-width="100%" width="100%">
+<tbody>
+
+<tr>
+
+<th>
+
+<p align="left">Term</p>
+
+</th>
+<th>
+
+<p align="left">Examples</p>
+
+</th>
+<th>
+
+<p align="left">Default<br>
+Representation</p>
+
+</th>
+<th>
+
+<p align="left">Description</p>
+
+</th>
+<th>
+
+<p align="left">Synonyms</p>
+
+</th>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource</p>
+
+</td>
+<td valign="top">
+
+<p>Account 1753<br>
+Sales order 08062100004</p>
+
+</td>
+<td valign="top">
+
+<p>Atom entry</p>
+
+</td>
+<td valign="top">
+
+<p>A resource is a single composite piece of data&nbsp;that is addressable by a URL
+in an SData service.</p>
+
+</td>
+<td valign="top">
+
+<p>Record<br>
+object<br>
+instance</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource kind</p>
+
+</td>
+<td valign="top">
+
+<p>Accounts<br>
+sales orders</p>
+
+</td>
+<td valign="top">
+
+<p>N/A</p>
+
+</td>
+<td valign="top">
+
+<p>A classification of resources&nbsp;that share common features and behaviours.</p>
+
+</td>
+<td valign="top">
+
+<p>Class<br>
+entity</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource collection</p>
+
+</td>
+<td valign="top">
+
+<p>All&nbsp;accounts<br>
+Sales orders of customer 347</p>
+
+</td>
+<td valign="top">
+
+<p>Atom feed</p>
+
+</td>
+<td valign="top">
+
+<p>A&nbsp;collection of resources.</p>
+
+</td>
+<td valign="top">
+
+<p>Table<br>
+list</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource definition</p>
+
+</td>
+<td valign="top">
+
+<p>Definition of accounts</p>
+
+</td>
+<td valign="top">
+
+<p>XSD &lt;element&gt; and &lt;complexType&gt;</p>
+
+</td>
+<td valign="top">
+
+<p>Describes the structure of the resources.</p>
+
+</td>
+<td valign="top">
+
+<p>Table definition<br>
+Class definition</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Resource template</p>
+
+</td>
+<td valign="top">
+
+<p>Account template</p>
+
+</td>
+<td valign="top">
+
+<p>Atom entry</p>
+
+</td>
+<td valign="top">
+
+<p>Is a pseudo-resource with&nbsp;all&nbsp;its properties set to their default values.
+<br>
+It can&nbsp;be used to set the initial content of a resource creation form.</p>
+
+</td>
+<td valign="top"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Contract</p>
+
+</td>
+<td valign="top">
+
+<p>CRM/ERP contract</p>
+
+</td>
+<td valign="top">
+
+<p>N/A</p>
+
+</td>
+<td valign="top">
+
+<p>Defines the structure and behaviour of a set of related resource kinds
+exposed by an SData service.</p>
+
+</td>
+<td valign="top">
+
+<p>Service interface</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Schema</p>
+
+</td>
+<td>
+
+<p>Schema for CRM/ERP contract</p>
+
+</td>
+<td valign="top">
+
+<p>XSD &lt;schema&gt;</p>
+
+</td>
+<td valign="top">
+
+<p>Groups together the resource definitions of a given contract.</p>
+
+</td>
+<td valign="top"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Property</p>
+
+</td>
+<td valign="top">
+
+<p>Account name<br>
+Sales order amount</p>
+
+</td>
+<td valign="top">
+
+<p>N/A</p>
+
+</td>
+<td valign="top">
+
+<p>An abstraction of a data element that is common to all the resources of a
+given kind.</p>
+
+</td>
+<td valign="top">
+
+<p>Field<br>
+column<br>
+attribute</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Property definition</p>
+
+</td>
+<td valign="top">
+
+<p>Definition of account name</p>
+
+</td>
+<td valign="top">
+
+<p>XSD &lt;element&gt; inside a &lt;complexType&gt;</p>
+
+</td>
+<td valign="top">
+
+<p>Describes the type and attributes of a given property of a resource kind.</p>
+
+</td>
+<td valign="top">
+
+<p>Field definition<br>
+column definition</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Property value</p>
+
+</td>
+<td valign="top">
+
+<p>Name of account 1753<br>
+Amount of sales order 08062100004</p>
+
+</td>
+<td valign="top">
+
+<p>XML element inside Atom entry</p>
+
+</td>
+<td valign="top">
+
+<p>An individual data element in a resource.<br>
+The term "property value" is oftened shortened as "property" as the context
+makes it obvious that the "value" is referred to.</p>
+
+</td>
+<td valign="top">
+
+<p>Field value<br>
+column value<br>
+attribute value</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+<p>Service operation</p>
+
+</td>
+<td valign="top">
+
+<p>Compute price</p>
+
+</td>
+<td valign="top">
+
+<p>URL for the operation<br>
+Atom entries for input parameters and result</p>
+
+</td>
+<td valign="top">
+
+<p>A&nbsp;SOAP-like operation that does not fit the CRUD model imposed by REST.</p>
+
+</td>
+<td valign="top">
+
+<p>Function<br>
+procedure<br>
+RPC</p>
+
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<hr>
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/Introduction"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/Introduction/663-DSY"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<br style="clear:both">
+</div>
+</div>
+</div>
+<div id="footer">
+<ul id="footerMenu">
+<li>Copyright Sage Technologies Limited 2009</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

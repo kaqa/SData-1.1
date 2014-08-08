@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:daisyutil="xalan://org.outerj.daisy.frontend.util.XslUtil" xmlns:urlencoder="xalan://java.net.URLEncoder" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:n="http://outerx.org/daisy/1.0#navigation" xmlns:d="http://outerx.org/daisy/1.0">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1.2 General Principles</title>
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/daisy.css" type="text/css" rel="stylesheet">
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/basic.css" type="text/css" rel="stylesheet">
+<link href="/SData-1.1/daisy/resources/skins/sageBranding2009/css/print.css" media="print" type="text/css" rel="stylesheet">
+<script>
+          var daisy;
+          if (!daisy) daisy = new Object();
+          daisy.mountPoint = "/daisy";
+          daisy.skin = "sageBranding2009";
+          
+            daisy.site = {};
+            daisy.site.name = "sdata";
+            daisy.site.branch = "sdata-1_1";
+            daisy.site.branchId = "16";
+            daisy.site.language = "default";
+            daisy.site.languageId = "1";
+          
+          daisy.user = {};
+          daisy.user.id = "101";
+          daisy.user.login = "guest";
+        </script><script src="/SData-1.1/daisy/resources/js/daisy.js" type="text/javascript"></script><script src="/SData-1.1/daisy/resources/skins/sageBranding2009/js/menu.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="headerContainer">
+<div id="header">
+<div id="headerUnderlay">
+<div id="headerContent">
+<ul class="tabNavigation">
+<li>
+<a class="menuLink" onmouseover="status=''; return true;" href="#">User: guest</a>
+<ul>
+<li class="tabNavigation">
+<a href="/SData-1.1/daisy/login?returnTo=%2Fdaisy%2Fdaisyhome">Change login</a>
+</li>
+<li class="tabNavigation">
+<a href="https://signin.sage.com/MBSignIn/SignUp.asp?OperationID=441911&MBSignUp/AccountActivationRedirectURL=http://interop.sage.com">Register</a>
+</li>
+<li class="tabNavigation">
+<a href="/SData-1.1/daisy/locale?returnTo=%2Fdaisy%2Fsdata%2FIntroduction%2F663-DSY.html">Change locale</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+<div id="sageLogo">
+<h1>
+<img style="margin-right: 15px;" align="absmiddle" alt="Sage Data" src="/SData-1.1/daisy/resources/local/img/sageLogo170.gif">SData Core Specification - version 1.1</h1>
+</div>
+<div id="bodyContainer">
+<div id="leftMenu">
+<div id="sidemenu">
+<ul class="navigation">
+<li class="navigation  navnode-open">
+<a href="/SData-1.1/daisy/sdata/Introduction.html" class="navigation  navnode-open">1  Introduction</a>
+<ul>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/Introduction/186-DSY.html" class="navigation ">1.1 Terminology</a>
+</li>
+<li class="navigation active-navnode">
+<a href="/SData-1.1/daisy/sdata/Introduction/663-DSY.html" class="navigation active-navnode">1.2 General Principles</a>
+</li>
+</ul>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL.html" class="navigation  navnode-closed">2  Anatomy of an SData URL</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataFeed.html" class="navigation  navnode-closed">3  Anatomy of an SData Feed</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Metadata.html" class="navigation  navnode-closed">4  Metadata</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Security.html" class="navigation  navnode-closed">5 Security</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/Queries.html" class="navigation  navnode-closed">6 Queries</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/ReadOperation.html" class="navigation  navnode-closed">7 Read Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/CreateOperation.html" class="navigation  navnode-closed">8 Create Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/UpdateOperation.html" class="navigation  navnode-closed">9 Update Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/DeleteOperation.html" class="navigation  navnode-closed">10 Delete Operation</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/ServiceOperations.html" class="navigation  navnode-closed">11 Service Operations</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/596-DSY.html" class="navigation  navnode-closed">12 Named Queries</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/165-DSY.html" class="navigation  navnode-closed">13 Batch Operations</a>
+</li>
+<li class="navigation  navnode-closed">
+<a href="/SData-1.1/daisy/sdata/423-DSY.html" class="navigation  navnode-closed">14 SData Registry</a>
+</li>
+<li class="navigation navgroup-clickable navnode-closed">
+<a class="navigation navgroup-clickable navnode-closed" href="/SData-1.1/daisy/sdata/g1">Appendices</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/662-DSY.html" class="navigation ">Compliance Summary</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/601-DSY.html" class="navigation ">Versions Summary</a>
+</li>
+<li class="navigation ">
+<a href="/SData-1.1/daisy/sdata/HistoryOfChanges.html" class="navigation ">History of Changes</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="breadcrumb">
+<span class="breadItem"><a href="http://sdata.sage.com/">SData Home</a></span>
+				 / <span class="breadItem"><a href="/SData-1.1/daisy/sdata/">SData Core Specification - version 1.1</a></span>
+				/ <span class="breadItemSelected">1.2 General Principles</span>
+</div>
+<div id="contentBorderTop"></div>
+<div id="contentBorder">
+<div id="content">
+<div id="contentOneCol">
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/Introduction/186-DSY"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<h1 xmlns:cinclude="http://apache.org/cocoon/include/1.0" xmlns:p="http://outerx.org/daisy/1.0#publisher" xmlns:einclude="http://outerx.org/daisy/1.0#externalinclude" xmlns:lt="http://outerx.org/daisy/1.0#linktransformer" id="dsy663-DSY" class="daisy-document-name">1.2 General Principles</h1>
+
+
+<h2 xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">REST-style Web Services</h2>
+
+
+<p>SData is a
+<a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">REST-style</a>
+web services protocol. The main characteristics of the REST approach are:</p>
+
+
+<ul>
+
+<li>Application data is exposed as resources</li>
+
+<li>Resources are addressed via URLs</li>
+
+<li>CRUD operations are mapped to HTTP methods (GET, POST, PUT, DELETE)</li>
+
+<li>Errors are reported as standard HTTP status codes.</li>
+
+<li>Functionalities like caching, paging, concurrency handling, asynchronous
+operations, etc. take advantage of HTTP features whenever possible.</li>
+
+</ul>
+
+
+<p>REST-style web services is a whole topic in itself and deserves a lot more
+than such a short enumeration. People who are curious about REST and who would
+like to dig into the design philosophy behind SData are encouraged to read the&nbsp;
+"<a href="http://oreilly.com/catalog/9780596529260">RESTful Web Services</a>"
+book by Leonard Richardson and Sam Ruby.</p>
+
+
+<h2>External Standards</h2>
+
+
+<p>SData leverages existing web standards whenever possible. The following table
+gives a list of the standards upon which SData is built:</p>
+
+
+<table class="content" print-width="100%" width="100%">
+<tbody>
+
+<tr>
+
+<th>
+
+<p>Standard</p>
+
+</th>
+<th>
+
+<p>Role in SData</p>
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>
+<a href="http://tools.ietf.org/html/rfc2068">HTTP</a>
+</p>
+
+</td>
+<td>
+
+<p>The foundation of SData, and of RESTful web services in general</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>
+<a href="http://en.wikipedia.org/wiki/HTTP_Secure">HTTPS</a>
+</p>
+
+</td>
+<td>
+
+<p>The secure version of HTTP, for encrypted communications.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>
+<a href="http://www.w3.org/TR/REC-xml/">XML</a>
+</p>
+
+</td>
+<td>
+
+<p>The markup language behind the two main data formats used by SData: Atom and
+XSD</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>
+<a href="http://atompub.org/">Atom</a>
+</p>
+
+</td>
+<td>
+
+<p>The standard "envelope" for SData request and response payloads</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p>
+<a href="http://www.w3.org/XML/Schema">XML Schema</a> (XSD)</p>
+
+</td>
+<td>
+
+<p>The markup language for SData schemas (metadata)</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><a href="http://www.opensearch.org/Home">OpenSearch</a></td>
+<td>
+
+<p>Protocol elements for paging</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><a href="http://msdn.microsoft.com/en-us/xml/bb190612.aspx">SLE (Simple List
+Extensions)</a><a href="http://msdn.microsoft.com/en-us/xml/bb190612.aspx">
+
+<br>
+
+</a></td>
+<td>
+
+<p>Optional rendering protocol for Internet Explorer.</p>
+
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<h2>Postel's Law</h2>
+
+
+<p>This wiki describes the SData protocol in a style that mixes informal
+examples and more formal protocol specifications. The formal material does not
+cover all possible cases, as this would have led to a very heavy document. There
+is nevertheless a very important principle that underlies SData's design and
+that implementors should follow when they encounter a situation not or
+incompletely described in the wiki:</p>
+
+
+<blockquote>
+
+<p>
+<em>Be conservative in what you send, be liberal in what you receive</em>
+</p>
+
+</blockquote>
+
+
+<p>This principle is known as
+<a href="http://en.wikipedia.org/wiki/Jon_Postel">Postel</a>'s Law. It is a
+fundamental principle that underlies the design of many protocols.</p>
+
+
+<p>The practical implications of this principle for implementors of SData
+providers are the following:</p>
+
+
+<ul>
+
+<li>SData providers should be tolerant (liberal) in the way they process
+requests received from SData consumers. For example, if some header is missing
+(<tt>Content-Type</tt> for example), the provider can usually infer the value of
+this header from the request (for example <tt>application/atom+xml;
+type=entry</tt> if the request is a POST to a resource kind URL). Then the
+provider should accept the request and process it instead of returning an error.
+The provider may nevertheless include a warning in its response to inform the
+consumer that some protocol element was missing from the request.</li>
+
+<li>SData providers should be strict (conservative) in the way they format their
+responses to SData consumers. For example, providers should systematically
+include the right <tt>Content-Type</tt> header in all the responses that they
+produce.</li>
+
+</ul>
+
+
+<p>Postel's law also applies to SData consumers, but we cannot assume that all
+SData consumers will strictly follow all the rules. This is why it is important
+that SData providers follow Postel's rule. This maximizes interoperability, even
+with consumers that do not handle all the subtleties of the protocol.</p>
+
+
+<p class="note">This does not mean that SData providers should never return
+errors. They should be tolerant as long as there is no real ambiguity or
+incoherence in the request. If, for example, the consumer sends a PUT request
+for a resource that does not exist, the provider should return a <tt>404 Not
+Found</tt> error, it should not treat the PUT as a POST and create a new
+resource.</p>
+
+
+<hr>
+<div style="float: right; clear: none;" id="prevNextTool">
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/Introduction/186-DSY"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+<space></space>
+<space></space>
+<a style="padding-right: 15px;" href="/SData-1.1/daisy/sdata/AnatomyOfAnSDataURL"><img border="0" src="/SData-1.1/daisy/resources/skins/sageBranding2009/images/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+</div>
+<br style="clear:both">
+</div>
+</div>
+</div>
+<div id="footer">
+<ul id="footerMenu">
+<li>Copyright Sage Technologies Limited 2009</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
